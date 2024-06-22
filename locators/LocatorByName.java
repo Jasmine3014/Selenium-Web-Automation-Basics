@@ -16,7 +16,7 @@ public class LocatorByName extends baseDriver {
 	
 	@Test
 	public void locateByClass() throws InterruptedException {
-		WebElement name = driver.findElement(By.Class("email"));
+		WebElement name = driver.findElement(By.name("email"));
 		name.sendKeys("jasmine");
 		Thread.sleep(5000);
 	}
